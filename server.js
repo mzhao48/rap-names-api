@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express() //shortcut app to use express methods instead of typing express() many times
+const cors = require('cors')
 const PORT = 8000
+
+app.use(cors())
 
 const rappers = {
     '21 savage': {
